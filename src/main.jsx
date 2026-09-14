@@ -2,7 +2,8 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { projects, site } from "./data";
 import "./styles.css";
-
+import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 const waLink = `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(site.whatsappMessage)}`;
 
 function App() {
@@ -183,7 +184,7 @@ function create() {
                   <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
                   <div className="project-links">
                     {project.live ? <a href={project.live} target="_blank" rel="noreferrer">Live Demo ↗</a> : <span className="disabled">Live Demo —</span>}
-                    {project.github ? <a href={project.github} target="_blank" rel="noreferrer">GitHub ◉</a> : <span className="disabled">GitHub —</span>}
+                    {project.github ? <a href={project.github} target="_blank" rel="noreferrer">GitHub <FaGithub /></a> : <span className="disabled">GitHub —</span>}
                   </div>
                 </div>
               </article>
@@ -200,16 +201,16 @@ function create() {
               <a className="primary inline-btn" href={waLink} target="_blank" rel="noreferrer">Let's Talk on WhatsApp ↗</a>
             </div>
             <div className="contact-links">
-              <a className="contact-item whatsapp" href={waLink} target="_blank" rel="noreferrer"><div className="contact-icon">◉</div><div><b>WhatsApp</b><small>Start a conversation</small></div></a>
-              <a className="contact-item" href={`mailto:${site.email}`}><div className="contact-icon">✉</div><div><b>Email</b><small>{site.email}</small></div></a>
-              <a className="contact-item" href={site.github} target="_blank" rel="noreferrer"><div className="contact-icon">◉</div><div><b>GitHub</b><small>View my code</small></div></a>
-              <a className="contact-item" href={site.linkedin} target="_blank" rel="noreferrer"><div className="contact-icon">in</div><div><b>LinkedIn</b><small>Let's connect</small></div></a>
+              <a className="contact-item whatsapp" href={waLink} target="_blank" rel="noreferrer"><div className="contact-icon"><FaWhatsapp /></div><div><b>WhatsApp</b><small>Start a conversation</small></div></a>
+              <a className="contact-item" href={`mailto:${site.email}`}><div className="contact-icon"><MdEmail /></div><div><b>Email</b><small>{site.email}</small></div></a>
+              <a className="contact-item" href={site.github} target="_blank" rel="noreferrer"><div className="contact-icon"><FaGithub /></div><div><b>GitHub</b><small>View my code</small></div></a>
+              <a className="contact-item" href={site.linkedin} target="_blank" rel="noreferrer"><div className="contact-icon"><FaLinkedin /></div><div><b>LinkedIn</b><small>Let's connect</small></div></a>
             </div>
           </div>
         </section>
       </main>
 
-      <a className="floating-wa" href={waLink} target="_blank" rel="noreferrer" aria-label="Contact on WhatsApp">◉</a>
+      <a className="floating-wa" href={waLink} target="_blank" rel="noreferrer" aria-label="Contact on WhatsApp"><FaWhatsapp /></a>
       <footer>© 2026 {site.name} · Built with React</footer>
     </>
   );
