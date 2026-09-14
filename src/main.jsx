@@ -58,7 +58,7 @@ function App() {
 
       <header className="nav">
         <button className="brand" onClick={() => scrollTo("home")} aria-label="Go to home">
-          <span className="brand-code">&lt;/&gt;</span> ZEIAD<span>.</span>
+          <span className="brand-code">&lt;/&gt;</span> ZEYAD<span>.</span>
         </button>
 
         <button className="menu-btn" onClick={() => setMenuOpen(v => !v)} aria-label="Open menu">
@@ -80,14 +80,14 @@ function App() {
           <div className="grid-bg" />
           <div className="hero-copy reveal">
             <div className="eyebrow">✦ Hello, I'm</div>
-            <h1>ZEIAD<br /><span>ALMAGRAPY</span></h1>
+            <h1>ZEYAD<br /><span>ALMAGHRAPY</span></h1>
             <h2>{site.role}<span className="cursor">|</span></h2>
             <p>
               I build modern, responsive websites and web applications that turn ideas into useful digital products.
             </p>
             <div className="actions">
               <button className="primary" onClick={() => scrollTo("projects")}>View My Work ↗</button>
-              <a className="secondary" href={waLink} target="_blank" rel="noreferrer">Contact Me ◌</a>
+              <a className="secondary" href={waLink} target="_blank" rel="noreferrer">Contact Me <FaWhatsapp /></a>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ function App() {
               <div className="screen">
                 <div className="dots"><i/><i/><i/></div>
                 <pre>{`const developer = {
-  name: "Ziad Almagrapy",
+  name: "Zeyad Almaghrapy",
   role: "Web Developer",
   passion: "Building things",
   stack: ["React", "JS", "Supabase"]
@@ -128,7 +128,7 @@ function create() {
               <a className="secondary inline-btn" href={waLink} target="_blank" rel="noreferrer">More About Me ↗</a>
             </div>
             <div className="facts">
-              <div><small>Name</small><b>Zeiad Almagrapy</b></div>
+              <div><small>Name</small><b>Zeyad Almaghrapy</b></div>
               <div><small>Focus</small><b>Web Development</b></div>
               <div><small>Location</small><b>{site.location}</b></div>
               <div><small>Status</small><b className="available">● Open to Work</b></div>
@@ -211,7 +211,7 @@ function create() {
       </main>
 
       <a className="floating-wa" href={waLink} target="_blank" rel="noreferrer" aria-label="Contact on WhatsApp"><FaWhatsapp /></a>
-      <footer>© 2026 {site.name} · Built with React</footer>
+      <footer>© 2026 {site.name} ·</footer>
     </>
   );
 }
