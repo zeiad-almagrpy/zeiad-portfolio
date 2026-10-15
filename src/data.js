@@ -31,11 +31,11 @@ export const projects = [
     featured: true,
   },
   {
-    title: "CRUD Application",
+    title: "zad-tech",
     description:
-      "تطبيق بسيط لإدارة المهام مع تركيز على تجربة الاستخدام والتفاعل مع عناصر الصفحة.",
-    tags: ["JavaScript", "DOM", "CSS"],
-    live: "https://zeiad-almagrpy.github.io/crud-project/",
+      "منصه الكترنيه لتعليم البرمجه وبيع الدورات التعليميه .",
+    tags: ["JavaScript", "react", "supabase"],
+    live: "https://zad-tech-plum.vercel.app/",
     github: "https://github.com/zeiad-almagrpy",
     type: "crud",
     featured: true,
