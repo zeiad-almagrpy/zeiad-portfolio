@@ -1,12 +1,12 @@
 export const projects = [
   {
-    title: "ELMAGHRPY STORE",
+    title: "flexi-pos",
     description:
-      "متجر إلكتروني لعرض المنتجات واستقبال الطلبات مع سلة شراء ولوحة تحكم وقاعدة بيانات.",
-    tags: ["JavaScript", "Supabase", "HTML", "CSS"],
-    live: "https://zeiad-almagrpy.github.io/elmaghrpy-store/",
+      "نظام نقطه بيع متكامل تقدر تخصصه لشغلك",
+    tags: ["JavaScript", "Supabase", "Type script", "next.js"],
+    live: "https://flexi-pos-omega.vercel.app/login",
     github: "https://github.com/zeiad-almagrpy",
-    type: "store",
+    type: "pos-system",
     featured: true,
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     tags: ["JavaScript", "react", "supabase"],
     live: "https://zad-tech-plum.vercel.app/",
     github: "https://github.com/zeiad-almagrpy",
-    type: "crud",
+    type: "acadmy",
     featured: true,
   },
 ];
